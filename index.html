@@ -26,6 +26,7 @@
     @media (max-width: 720px) {
       .gf-nav-desktop { display: none !important; }
       .gf-stack-mobile { grid-template-columns: 1fr !important; }
+      .gf-ba-grid { grid-template-columns: 1fr !important; }
     }
   </style>
 </helmet>
@@ -51,13 +52,14 @@
     <img src="./hero-bg.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
     <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(30,17,11,0.72) 0%, rgba(30,17,11,0.6) 45%, rgba(30,17,11,0.78) 100%); z-index:1;"></div>
     <div style="position:relative; z-index:2; max-width:860px; padding:72px 24px; display:flex; flex-direction:column; align-items:center;">
-      <div class="gf-hero-line" style="animation-delay:0.05s; font-size:15px; font-weight:700; letter-spacing:0.14em; color:#F0D9C4; margin-bottom:20px; text-transform:uppercase;">이대유일 여성전용 헬스장</div>
-      <h1 style="font-size:clamp(42px,5.6vw,68px); font-weight:900; line-height:1.22; letter-spacing:-0.02em; margin:0 0 26px; color:#F7F3EC;">
-        <span class="gf-hero-line" style="animation-delay:0.15s; display:block;">여성은 여성전용헬스장에서,</span>
+      <div class="gf-hero-line" style="animation-delay:0.05s; font-size:15px; font-weight:700; letter-spacing:0.14em; color:#F0D9C4; margin-bottom:20px; text-transform:uppercase; text-align:center;">이대유일 여성전용 헬스장</div>
+      <h1 style="font-size:clamp(42px,5.6vw,68px); font-weight:900; line-height:1.22; letter-spacing:-0.02em; margin:0 0 26px; color:#F7F3EC; text-align:center;">
+        <span class="gf-hero-line" style="animation-delay:0.15s; display:block;">여성은</span>
+        <span class="gf-hero-line" style="animation-delay:0.22s; display:block;">여성전용 헬스장에서</span>
         <span class="gf-hero-line" style="animation-delay:0.3s; display:block; color:#F0D9C4;">편안하게 운동하세요!</span>
       </h1>
-      <p class="gf-hero-line" style="animation-delay:0.45s; font-size:20px; line-height:1.7; color:#F0E4D8; max-width:520px; margin:0 0 34px;">
-        바쁜 일상 속에서도 몸과 마음이 편안해지는 공간.<br>여성분들은 여성을 위한 곳에서 운동하세요.
+      <p class="gf-hero-line" style="animation-delay:0.45s; font-size:20px; line-height:1.7; color:#F0E4D8; max-width:520px; margin:0 0 34px; text-align:center;">
+        바쁜 일상 속에서도 몸과 마음이<br>편안해지는 공간.<br>여성분들은 여성을 위한<br>곳에서 운동하세요.
       </p>
       <div class="gf-hero-line" style="animation-delay:0.6s; display:flex; gap:14px; flex-wrap:wrap; justify-content:center;">
         <a href="#programs" style="background:#4A2C1D; color:#F7F3EC; padding:16px 30px; border-radius:28px 8px 28px 8px; font-size:15px; font-weight:700; text-decoration:none; box-shadow:0 4px 14px rgba(74,44,29,0.28); transition:box-shadow 0.25s, transform 0.25s;" style-hover="box-shadow:0 8px 22px rgba(74,44,29,0.35); transform:translateY(-2px);">시설 둘러보기</a>
@@ -88,10 +90,10 @@
   <!-- PROMO BANNER -->
   <section id="promo" class="gf-fade" style="background:#4A2C1D; color:#F7F3EC; padding:72px 24px; border-top:1px solid rgba(74,44,29,0.12);">
     <div class="gf-stack-mobile" style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:32px; align-items:center;">
-      <div style="min-width:0;">
+      <div style="min-width:0; text-align:center;">
         <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#E6BFA0; text-transform:uppercase; margin-bottom:14px;">링크짐 여성전용 헬스장</div>
-        <h2 style="font-size:clamp(26px,3.2vw,38px); font-weight:900; line-height:1.3; margin:0 0 16px; color:#F7F3EC;">운동이 처음이라면 50% 할인<br>PT 3회로 시작해보세요</h2>
-        <p style="font-size:15px; color:#E6D5C0; line-height:1.7; margin:0 0 28px; max-width:100%;">신규 회원 한정으로,<br>50분 1:1 체험 세션을 절반 가격에 만나보실 수 있어요.</p>
+        <h2 style="font-size:clamp(26px,3.2vw,38px); font-weight:900; line-height:1.3; margin:0 0 16px; color:#F7F3EC;">운동이 처음이라면<br>50% 할인<br>PT 3회로 시작해보세요!</h2>
+        <p style="font-size:15px; color:#E6D5C0; line-height:1.7; margin:0 auto 28px; max-width:420px;">50분 1:1 체험 세션을 절반 가격에<br>만나보실 수 있어요</p>
         <a href="https://map.naver.com/p/search/%EB%A7%81%ED%81%AC%EC%A7%90/place/1546269768?placePath=%2Fticket%3Fbk_query%3D%EB%A7%81%ED%81%AC%EC%A7%90%26entry%3Dpll%26fromNxList%3Dtrue%26fromPanelNum%3D2%26timestamp%3D202607131819%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EB%A7%81%ED%81%AC%EC%A7%90&entry=pll&from=nx&fromNxList=true&searchType=place&c=15.00,0,0,0,dh" style="background:#F7F3EC; color:#4A2C1D; padding:15px 28px; border-radius:24px 8px 24px 8px; font-size:15px; font-weight:700; text-decoration:none; display:inline-block;">지금 신청하기</a>
       </div>
       <div style="aspect-ratio:5/4; border-radius:28px 10px 28px 10px; overflow:hidden;">
@@ -141,14 +143,14 @@
       <p style="font-size:16px; color:rgba(247,243,236,0.65); margin:0 0 48px;">실제 회원님들의 변화입니다.</p>
 
       <div style="background:rgba(247,243,236,0.06); border:1px solid rgba(247,243,236,0.14); border-radius:20px; overflow:hidden; margin-bottom:32px;">
-        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:rgba(247,243,236,0.14);">
+        <div class="gf-ba-grid" style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:rgba(247,243,236,0.14);">
           <div style="position:relative;">
             <img src="uploads/7.png" alt="다이어트 비포&애프터 1" style="width:100%; height:100%; object-fit:cover; display:block;">
-            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">20회 진행 · -8kg</span>
+            <span style="position:absolute; bottom:10px; left:10px; background:rgba(30,17,11,0.7); color:#F7F3EC; font-size:14px; font-weight:700; padding:5px 12px; border-radius:20px; white-space:nowrap;">20회 진행 · -8kg</span>
           </div>
           <div style="position:relative;">
             <img src="uploads/9.png" alt="다이어트 비포&애프터 2" style="width:100%; height:100%; object-fit:cover; display:block;">
-            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">10회 진행 · -5kg</span>
+            <span style="position:absolute; bottom:10px; left:10px; background:rgba(30,17,11,0.7); color:#F7F3EC; font-size:14px; font-weight:700; padding:5px 12px; border-radius:20px; white-space:nowrap;">10회 진행 · -5kg</span>
           </div>
         </div>
         <div style="padding:24px 28px; text-align:left;">
@@ -158,15 +160,15 @@
       </div>
 
       <div style="background:rgba(247,243,236,0.06); border:1px solid rgba(247,243,236,0.14); border-radius:20px; overflow:hidden;">
-        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:rgba(247,243,236,0.14);">
-          <div style="position:relative; grid-column:span 2; display:grid; grid-template-columns:1fr 1fr; gap:2px;">
+        <div class="gf-ba-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:rgba(247,243,236,0.14);">
+          <div class="gf-ba-grid" style="position:relative; grid-column:span 2; display:grid; grid-template-columns:1fr 1fr; gap:2px;">
             <img src="uploads/posture1.png" alt="1회차 어깨 가동범위 개선 전" style="width:100%; height:100%; object-fit:cover; display:block;">
             <img src="uploads/posture2.png" alt="1회차 어깨 가동범위 개선 후" style="width:100%; height:100%; object-fit:cover; display:block;">
-            <span style="position:absolute; bottom:12px; left:12px; right:12px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:clamp(11px,2.4vw,24px); font-weight:700; padding:8px 14px; border-radius:20px; max-width:calc(100% - 24px); box-sizing:border-box;">1회차 어깨 가동범위 개선</span>
+            <span style="position:absolute; bottom:10px; left:10px; background:rgba(30,17,11,0.7); color:#F7F3EC; font-size:13px; font-weight:700; padding:5px 12px; border-radius:20px; white-space:nowrap;">1회차 어깨 가동범위 개선</span>
           </div>
           <div style="position:relative; grid-column:span 2;">
             <img src="uploads/posture3.png" alt="2회차 거북목/라운드 숄더 개선" style="width:100%; height:100%; object-fit:cover; display:block;">
-            <span style="position:absolute; bottom:12px; left:12px; right:12px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:clamp(11px,2.4vw,24px); font-weight:700; padding:8px 14px; border-radius:20px; max-width:calc(100% - 24px); box-sizing:border-box;">2회차 거북목/라운드 숄더 개선</span>
+            <span style="position:absolute; bottom:10px; left:10px; background:rgba(30,17,11,0.7); color:#F7F3EC; font-size:13px; font-weight:700; padding:5px 12px; border-radius:20px; white-space:nowrap;">2회차 거북목/라운드 숄더 개선</span>
           </div>
         </div>
         <div style="padding:24px 28px; text-align:left;">
@@ -176,14 +178,14 @@
       </div>
 
       <div style="background:rgba(247,243,236,0.06); border:1px solid rgba(247,243,236,0.14); border-radius:20px; overflow:hidden; margin-top:32px;">
-        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:rgba(247,243,236,0.14);">
+        <div class="gf-ba-grid" style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:rgba(247,243,236,0.14);">
           <div style="position:relative;">
             <img src="uploads/rehab1.png" alt="슬개골 수술 후 무릎 펴짐 개선 비포&애프터" style="width:100%; height:100%; object-fit:cover; display:block;">
-            <span style="position:absolute; bottom:12px; left:12px; right:12px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:clamp(11px,2.4vw,24px); font-weight:700; padding:8px 14px; border-radius:20px; max-width:calc(100% - 24px); box-sizing:border-box;">슬개골 수술 후 무릎 펴짐 개선</span>
+            <span style="position:absolute; bottom:10px; left:10px; background:rgba(30,17,11,0.7); color:#F7F3EC; font-size:14px; font-weight:700; padding:5px 12px; border-radius:20px; white-space:nowrap;">슬개골 수술 후 무릎 펴짐 개선</span>
           </div>
           <div style="position:relative;">
             <img src="uploads/rehab2.png" alt="강직성 척추염 비포&애프터" style="width:100%; height:100%; object-fit:cover; display:block;">
-            <span style="position:absolute; bottom:12px; left:12px; right:12px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:clamp(11px,2.4vw,24px); font-weight:700; padding:8px 14px; border-radius:20px; max-width:calc(100% - 24px); box-sizing:border-box;">강직성 척추염</span>
+            <span style="position:absolute; bottom:10px; left:10px; background:rgba(30,17,11,0.7); color:#F7F3EC; font-size:14px; font-weight:700; padding:5px 12px; border-radius:20px; white-space:nowrap;">강직성 척추염</span>
           </div>
         </div>
         <div style="padding:24px 28px; text-align:left;">
