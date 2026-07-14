@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LINKGYM EWHA | 이대 여성전용 헬스장</title>
+<meta name="description" content="이화여대 인근 여성전용 헬스장 LINKGYM EWHA. 1:1 PT, 다이어트, 체형교정, 재활운동 전문.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes lineIn { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+    .gf-fade { opacity:0; animation: fadeUp 0.55s ease-out forwards; }
+    .gf-hero-line { opacity:0; animation: lineIn 0.6s ease-out forwards; }
+    @media (prefers-reduced-motion: reduce) {
+      .gf-fade, .gf-hero-line { animation: none !important; opacity:1 !important; transform:none !important; }
+    }
+    a:focus-visible, button:focus-visible { outline: 2px solid #8A5A3D; outline-offset: 3px; }
+    ::selection { background: #C98F6B; color: #2E1B12; }
+    body { margin:0; }
+  </style>
+</helmet>
+
+<div style="font-family:'Pretendard',system-ui,sans-serif; background:#F7F3EC; color:#2E1B12; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(247,243,236,0.92); backdrop-filter:blur(8px); border-bottom:1px solid rgba(74,44,29,0.1);">
+    <div style="max-width:1240px; margin:0 auto; padding:18px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <div style="font-weight:900; font-size:22px; letter-spacing:-0.02em; color:#4A2C1D;">LINKGYM EWHA
+      
+      
+    </div><nav style="display: flex; align-items: center; gap: 32px; font-size: 22px" class="gf-nav-desktop">
+        <a href="#programs" style="color:#2E1B12; text-decoration:none; font-size:15px; font-weight:500;">시설 미리보기</a>
+        <a href="#trainers" style="color:#2E1B12; text-decoration:none; font-size:15px; font-weight:500;">트레이너</a>
+        <a href="#reviews" style="color:#2E1B12; text-decoration:none; font-size:15px; font-weight:500;">후기</a>
+        <a href="#cta" style="color:#2E1B12; text-decoration:none; font-size:15px; font-weight:500;">문의</a>
+      </nav>
+  </div></header>
+
+  <!-- HERO -->
+  <section style="position:relative; min-height:820px; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden;">
+    <img src="./hero-bg.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(30,17,11,0.72) 0%, rgba(30,17,11,0.6) 45%, rgba(30,17,11,0.78) 100%); z-index:1;"></div>
+    <div style="position:relative; z-index:2; max-width:860px; padding:72px 24px; display:flex; flex-direction:column; align-items:center;">
+      <div class="gf-hero-line" style="animation-delay:0.05s; font-size:15px; font-weight:700; letter-spacing:0.14em; color:#F0D9C4; margin-bottom:20px; text-transform:uppercase;">이대유일 여성전용 헬스장</div>
+      <h1 style="font-size:clamp(42px,5.6vw,68px); font-weight:900; line-height:1.22; letter-spacing:-0.02em; margin:0 0 26px; color:#F7F3EC;">
+        <span class="gf-hero-line" style="animation-delay:0.15s; display:block;">여성은 여성전용헬스장에서,</span>
+        <span class="gf-hero-line" style="animation-delay:0.3s; display:block; color:#F0D9C4;">편안하게 운동하세요!</span>
+      </h1>
+      <p class="gf-hero-line" style="animation-delay:0.45s; font-size:20px; line-height:1.7; color:#F0E4D8; max-width:520px; margin:0 0 34px;">
+        바쁜 일상 속에서도 몸과 마음이 편안해지는 공간.<br>여성분들은 여성을 위한 곳에서 운동하세요.
+      </p>
+      <div class="gf-hero-line" style="animation-delay:0.6s; display:flex; gap:14px; flex-wrap:wrap; justify-content:center;">
+        <a href="#programs" style="background:#4A2C1D; color:#F7F3EC; padding:16px 30px; border-radius:28px 8px 28px 8px; font-size:15px; font-weight:700; text-decoration:none; box-shadow:0 4px 14px rgba(74,44,29,0.28); transition:box-shadow 0.25s, transform 0.25s;" style-hover="box-shadow:0 8px 22px rgba(74,44,29,0.35); transform:translateY(-2px);">시설 둘러보기</a>
+        <a href="#promo" style="color:#F7F3EC; padding:16px 20px; font-size:15px; font-weight:700; text-decoration:none; border-bottom:2px solid #C98F6B;">프로그램 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="gf-fade" style="max-width:1240px; margin:0 auto; padding:96px 24px; border-top:1px solid rgba(74,44,29,0.12);">
+    <div style="margin-bottom:44px;">
+      <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#8A5A3D; text-transform:uppercase; margin-bottom:10px;">LINKGYM EWHA</div>
+      <h2 style="font-size:clamp(26px,3vw,36px); font-weight:900; letter-spacing:-0.02em; margin:0;">시설 미리보기</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-57-59 001.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-57-59 002.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-57-59 004.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-58-00 005.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-58-00 006.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-58-00 007.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-58-00 008.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-58-00 009.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div style="aspect-ratio:1/1; border-radius:28px; overflow:hidden; box-shadow:0 6px 20px rgba(74,44,29,0.08);"><img src="uploads/KakaoTalk_Photo_2026-07-13-17-58-00 010.jpeg" alt="시설 사진" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section id="promo" class="gf-fade" style="background:#4A2C1D; color:#F7F3EC; padding:72px 24px; border-top:1px solid rgba(74,44,29,0.12);">
+    <div style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:0.9fr 1fr; gap:0px; align-items:center;">
+      <div>
+        <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#E6BFA0; text-transform:uppercase; margin-bottom:14px;">링크짐 여성전용 헬스장</div>
+        <h2 style="font-size:clamp(26px,3.2vw,38px); font-weight:900; line-height:1.3; margin:0 0 16px; color:#F7F3EC;">운동이 처음이라면 50% 할인<br>PT 3회로 시작해보세요</h2>
+        <p style="font-size:15px; color:#E6D5C0; line-height:1.7; margin:0 0 28px; max-width:420px;">신규 회원 한정으로,<br>50분 1:1 체험 세션을 절반 가격에 만나보실 수 있어요.</p>
+        <a href="https://map.naver.com/p/search/%EB%A7%81%ED%81%AC%EC%A7%90/place/1546269768?placePath=%2Fticket%3Fbk_query%3D%EB%A7%81%ED%81%AC%EC%A7%90%26entry%3Dpll%26fromNxList%3Dtrue%26fromPanelNum%3D2%26timestamp%3D202607131819%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EB%A7%81%ED%81%AC%EC%A7%90&entry=pll&from=nx&fromNxList=true&searchType=place&c=15.00,0,0,0,dh" style="background:#F7F3EC; color:#4A2C1D; padding:15px 28px; border-radius:24px 8px 24px 8px; font-size:15px; font-weight:700; text-decoration:none; display:inline-block;">지금 신청하기</a>
+      </div>
+      <div style="aspect-ratio:5/4; border-radius:28px 10px 28px 10px; overflow:hidden;">
+        <img src="uploads/IMG_3150.JPG" alt="트레이닝 장면" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section id="trainers" class="gf-fade" style="max-width:1240px; margin:0 auto; padding:96px 24px; border-top:1px solid rgba(74,44,29,0.12);">
+    <div style="margin-bottom:44px;">
+      <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#8A5A3D; text-transform:uppercase; margin-bottom:10px;">Trainers</div>
+      <h2 style="font-size:clamp(26px,3vw,36px); font-weight:900; letter-spacing:-0.02em; margin:0;">트레이너 소개</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:24px;">
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="aspect-ratio:3/4; border-radius:20px 6px 20px 6px; overflow:hidden;"><img src="uploads/trainer4.jpeg" alt="엄태준 트레이너" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+        <div style="font-weight:800; font-size:15px;">엄태준 트레이너</div>
+        <div style="font-size:13px; color:#8A5A3D; font-weight:600;">듀엣 전문 · 다이어트 · 근력증진 · 체형교정</div>
+        <a href="https://blog.naver.com/juny_jun1016/224102392096" target="_blank" rel="noopener" style="font-size:13px; font-weight:700; color:#4A2C1D; text-decoration:none; border-bottom:1px solid #C98F6B; width:fit-content;">소개글 보기 →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="aspect-ratio:3/4; border-radius:20px 6px 20px 6px; overflow:hidden;"><img src="uploads/trainer2.jpeg" alt="나윤진 트레이너" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+        <div style="font-weight:800; font-size:15px;">나윤진 트레이너</div>
+        <div style="font-size:13px; color:#8A5A3D; font-weight:600;">헬린이 · 여성 다이어트 · 근력증진</div>
+        <a href="https://blog.naver.com/yunjin2431/223713613370" target="_blank" rel="noopener" style="font-size:13px; font-weight:700; color:#4A2C1D; text-decoration:none; border-bottom:1px solid #C98F6B; width:fit-content;">소개글 보기 →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="aspect-ratio:3/4; border-radius:20px 6px 20px 6px; overflow:hidden;"><img src="uploads/trainer1.jpeg" alt="최예나 트레이너" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+        <div style="font-weight:800; font-size:15px;">최예나 트레이너</div>
+        <div style="font-size:13px; color:#8A5A3D; font-weight:600;">듀엣전문 · 헬린이 · 여성 다이어트</div>
+        <a href="https://blog.naver.com/linkgym01/223767022777" target="_blank" rel="noopener" style="font-size:13px; font-weight:700; color:#4A2C1D; text-decoration:none; border-bottom:1px solid #C98F6B; width:fit-content;">소개글 보기 →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="aspect-ratio:3/4; border-radius:20px 6px 20px 6px; overflow:hidden;"><img src="uploads/trainer5.jpeg" alt="송세일 트레이너" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+        <div style="font-weight:800; font-size:15px;">송세일 트레이너</div>
+        <div style="font-size:13px; color:#8A5A3D; font-weight:600;">재활 · 체형교정</div>
+        <a href="https://blog.naver.com/linkgym/224284469862" target="_blank" rel="noopener" style="font-size:13px; font-weight:700; color:#4A2C1D; text-decoration:none; border-bottom:1px solid #C98F6B; width:fit-content;">소개글 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER -->
+  <section id="reviews" class="gf-fade" style="background:#4A2C1D; padding:96px 24px; text-align:center;">
+    <div style="max-width:1240px; margin:0 auto;">
+      <h2 style="font-size:clamp(26px,3.2vw,38px); font-weight:900; letter-spacing:-0.02em; margin:0 0 16px; color:#F7F3EC;">링크짐 회원 비포&애프터</h2>
+      <p style="font-size:16px; color:rgba(247,243,236,0.65); margin:0 0 48px;">실제 회원님들의 변화입니다.</p>
+
+      <div style="background:rgba(247,243,236,0.06); border:1px solid rgba(247,243,236,0.14); border-radius:20px; overflow:hidden; margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:rgba(247,243,236,0.14);">
+          <div style="position:relative;">
+            <img src="uploads/7.png" alt="다이어트 비포&애프터 1" style="width:100%; height:100%; object-fit:cover; display:block;">
+            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">20회 진행 · -8kg</span>
+          </div>
+          <div style="position:relative;">
+            <img src="uploads/9.png" alt="다이어트 비포&애프터 2" style="width:100%; height:100%; object-fit:cover; display:block;">
+            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">10회 진행 · -5kg</span>
+          </div>
+        </div>
+        <div style="padding:24px 28px; text-align:left;">
+          <div style="font-weight:800; font-size:16px; color:#F7F3EC; margin-bottom:10px;">다이어트 비포&애프터</div>
+          <div style="font-size:14px; color:rgba(247,243,236,0.7);">→ 여성 다이어트 전문, 여성을 위한 운동을 경험해보세요</div>
+        </div>
+      </div>
+
+      <div style="background:rgba(247,243,236,0.06); border:1px solid rgba(247,243,236,0.14); border-radius:20px; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:rgba(247,243,236,0.14);">
+          <div style="position:relative; grid-column:span 2; display:grid; grid-template-columns:1fr 1fr; gap:2px;">
+            <img src="uploads/posture1.png" alt="1회차 어깨 가동범위 개선 전" style="width:100%; height:100%; object-fit:cover; display:block;">
+            <img src="uploads/posture2.png" alt="1회차 어깨 가동범위 개선 후" style="width:100%; height:100%; object-fit:cover; display:block;">
+            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">1회차 어깨 가동범위 개선</span>
+          </div>
+          <div style="position:relative; grid-column:span 2;">
+            <img src="uploads/posture3.png" alt="2회차 거북목/라운드 숄더 개선" style="width:100%; height:100%; object-fit:cover; display:block;">
+            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">2회차 거북목/라운드 숄더 개선</span>
+          </div>
+        </div>
+        <div style="padding:24px 28px; text-align:left;">
+          <div style="font-weight:800; font-size:16px; color:#F7F3EC; margin-bottom:10px;">체형교정 비포&애프터</div>
+          <div style="font-size:14px; color:rgba(247,243,236,0.7);">→ 틀어진 골반과 어깨, 자세만 바로잡았을 뿐인데 라인이 달라졌어요</div>
+        </div>
+      </div>
+
+      <div style="background:rgba(247,243,236,0.06); border:1px solid rgba(247,243,236,0.14); border-radius:20px; overflow:hidden; margin-top:32px;">
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:rgba(247,243,236,0.14);">
+          <div style="position:relative;">
+            <img src="uploads/rehab1.png" alt="슬개골 수술 후 무릎 펴짐 개선 비포&애프터" style="width:100%; height:100%; object-fit:cover; display:block;">
+            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">슬개골 수술 후 무릎 펴짐 개선</span>
+          </div>
+          <div style="position:relative;">
+            <img src="uploads/rehab2.png" alt="강직성 척추염 비포&애프터" style="width:100%; height:100%; object-fit:cover; display:block;">
+            <span style="position:absolute; bottom:20px; left:20px; background:rgba(30,17,11,0.75); color:#F7F3EC; font-size:24px; font-weight:700; padding:12px 24px; border-radius:32px;">강직성 척추염</span>
+          </div>
+        </div>
+        <div style="padding:24px 28px; text-align:left;">
+          <div style="font-weight:800; font-size:16px; color:#F7F3EC; margin-bottom:10px;">재활운동 비포&애프터</div>
+          <div style="font-size:14px; color:rgba(247,243,236,0.7);">→ 통증 없이 안전하게, 무너진 몸을 다시 움직이게 된 변화</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="gf-fade" style="background:#FBF3EA; padding:96px 24px;">
+    <div style="max-width:800px; margin:0 auto;">
+      <div style="margin-bottom:36px;">
+        <div style="font-size:13px; font-weight:700; letter-spacing:0.14em; color:#8A5A3D; text-transform:uppercase; margin-bottom:10px;">FAQ</div>
+        <h2 style="font-size:clamp(24px,3vw,32px); font-weight:900; letter-spacing:-0.02em; margin:0;">자주 묻는 질문</h2>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <details style="background:#fff; border-radius:16px; padding:20px 24px;">
+          <summary style="font-weight:700; font-size:15px; cursor:pointer;">운동복이나 준비물이 따로 필요한가요?</summary>
+          <p style="font-size:14px; color:#5C4030; line-height:1.7; margin:12px 0 0;">실내운동화만 준비해주시면 됩니다. 운동복과 수건은 구비되어 있습니다.</p>
+        </details>
+        <details style="background:#fff; border-radius:16px; padding:20px 24px;">
+          <summary style="font-weight:700; font-size:15px; cursor:pointer;">위치가 정확히 어디인가요?</summary>
+          <p style="font-size:14px; color:#5C4030; line-height:1.7; margin:12px 0 0;">이화여대 5길 35 영타운 지웰에스테이트 지하 1층입니다. 이대역 도보 3분, 신촌기차역 도보 1분</p>
+        </details>
+        <details style="background:#fff; border-radius:16px; padding:20px 24px;">
+          <summary style="font-weight:700; font-size:15px; cursor:pointer;">운동을 한 번도 해본 적이 없는데 괜찮을까요?</summary>
+          <p style="font-size:14px; color:#5C4030; line-height:1.7; margin:12px 0 0;">네, 회원 대부분이 운동이 처음인 분들이에요. 체력 수준에 맞춰 강도를 조절해드려요.</p>
+        </details>
+        <details style="background:#fff; border-radius:16px; padding:20px 24px;">
+          <summary style="font-weight:700; font-size:15px; cursor:pointer;">공강 시간에 예약할 수 있나요?</summary>
+          <p style="font-size:14px; color:#5C4030; line-height:1.7; margin:12px 0 0;">오전 7시부터 오후 11시까지 운영하며, 편하게 예약해주세요!</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="cta" class="gf-fade" style="max-width:1240px; margin:0 auto; padding:96px 24px 120px;">
+    <div style="background:#4A2C1D; border-radius:40px 12px 40px 12px; padding:64px 48px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; color:#F7F3EC;">
+      <div>
+        <h2 style="font-size:clamp(26px,3.2vw,34px); font-weight:900; line-height:1.35; margin:0 0 16px;">망설이지 말고,<br>일단 한 번 와보세요</h2>
+        <p style="font-size:15px; color:#E6D5C0; line-height:1.7; margin:0; max-width:400px;">체험 세션은 편하게 상담받는 자리예요. 등록을 강요하지 않으니, 궁금한 점만 물어보셔도 괜찮아요.</p>
+      </div>
+      <div style="background:#F7F3EC; border-radius:24px 8px 24px 8px; padding:40px 28px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; text-align:center;">
+        <div style="font-size:15px; color:#5C4030; line-height:1.6;">아래 버튼을 눌러<br>네이버 예약으로 바로 신청하세요.</div>
+        <a href="https://map.naver.com/p/search/%EB%A7%81%ED%81%AC%EC%A7%90/place/1546269768?placePath=%2Fticket%3Fbk_query%3D%EB%A7%81%ED%81%AC%EC%A7%90%26entry%3Dpll%26fromNxList%3Dtrue%26fromPanelNum%3D2%26timestamp%3D202607131819%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EB%A7%81%ED%81%AC%EC%A7%90&entry=pll&from=nx&fromNxList=true&searchType=place&c=15.00,0,0,0,dh" target="_blank" rel="noopener" style="background:#4A2C1D; color:#F7F3EC; border:none; padding:16px 32px; border-radius:20px 8px 20px 8px; font-size:15px; font-weight:700; font-family:inherit; text-decoration:none; transition:transform 0.2s;" style-hover="transform:translateY(-2px);">네이버로 예약하기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:32px 24px; text-align:center; font-size:13px; color:#8A5A3D;">© 2026 그레이스핏. 이화여대 인근 여성 전용 1:1 PT 스튜디오</footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
